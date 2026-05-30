@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Pacote STL Organizadores de Cozinha",
+  "description": "Landing page de conversão para o Pacote com mais de 100 modelos STL de organizadores e decorações de cozinha prontos para impressão 3D.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

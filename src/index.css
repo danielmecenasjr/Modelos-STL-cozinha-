@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-marrom-escuro: #000000;
+  --color-bege-claro: #E8D9C9;
+  --color-bege-rosado: #F2E4DE;
+  --color-vermelho-coral: #E85F50;
+  --color-verde-cta: #1DB954;
+  --color-preto-suave: #1A1A1A;
+  --font-sans: "Poppins", "Montserrat", "Inter", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom premium transitions and elegant card styles */
+.premium-shadow-sm {
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.04), 0 1px 3px -1px rgba(0, 0, 0, 0.02);
+}
+
+.premium-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 1px 5px -1px rgba(0, 0, 0, 0.03);
+}
+
+.premium-shadow-lg {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.12), 0 1px 8px -1px rgba(0, 0, 0, 0.04);
+}
+
+.elegant-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.elegant-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.14);
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
