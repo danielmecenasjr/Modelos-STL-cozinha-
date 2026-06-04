@@ -239,10 +239,10 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     id: "basico",
     name: "PLANO BÁSICO",
-    price: "17,90",
+    price: "19,90",
     oldPrice: "67,00",
     highlighted: false,
-    installments: "R$ 17,90 à vista",
+    installments: "R$ 19,90 à vista",
     image: "https://i.postimg.cc/zGSLQYxs/mockup-novo-(1).webp",
     items: [
       "Acesso imediato",
@@ -254,11 +254,11 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     id: "completo",
     name: "PLANO COMPLETO",
-    price: "37,90",
+    price: "39,90",
     oldPrice: "197,00",
     badge: "MAIS VENDIDO",
     highlighted: true,
-    installments: "R$ 37,90 à vista",
+    installments: "R$ 39,90 à vista",
     image: "https://i.postimg.cc/zGSLQYxs/mockup-novo-(1).webp",
     items: [
       "Todos os +100 modelos STL de Cozinha",
