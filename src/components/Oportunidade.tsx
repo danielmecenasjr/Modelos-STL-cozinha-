@@ -25,8 +25,8 @@ export default function Oportunidade() {
         <div className="mt-8">
           <button
             onClick={handleScrollToCta}
-            className="w-full max-w-xs text-black font-extrabold uppercase py-4 px-6 rounded-xl transition-all duration-300 tracking-widest cursor-pointer shadow-lg transform hover:translate-y-[-2px] inline-block"
-            style={{ fontSize: "12px", backgroundColor: "#1db954" }}
+            className="w-full max-w-xs text-white font-extrabold uppercase py-4 px-6 rounded-xl transition-all duration-300 tracking-widest cursor-pointer shadow-lg transform hover:translate-y-[-2px] inline-block"
+            style={{ fontSize: "12px", backgroundColor: "#1db954", color: "#ffffff" }}
           >
             QUERO ACESSAR AGORA E USAR HOJE
           </button>

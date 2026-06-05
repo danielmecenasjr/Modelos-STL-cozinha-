@@ -172,7 +172,7 @@ export default function Precos() {
       {/* MODAL DE UPSELL */}
       <AnimatePresence>
         {showUpsell && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4">
             {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -188,46 +188,37 @@ export default function Precos() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", duration: 0.4 }}
-              className="relative w-full max-w-lg bg-white text-black rounded-3xl overflow-hidden shadow-2xl border-4 border-[#1DB954] flex flex-col max-h-[92vh] z-10 font-sans"
+              className="relative w-full max-w-lg bg-white text-black rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-[#1DB954] flex flex-col max-h-[88vh] sm:max-h-[92vh] z-10 font-sans"
             >
-              {/* Botão para Fechar */}
-              <button
-                onClick={() => setShowUpsell(false)}
-                className="absolute top-3.5 right-4 text-black/40 hover:text-black hover:bg-neutral-100 p-1.5 rounded-full z-10 transition-colors"
-                aria-label="Fechar"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
               {/* Conteúdo com Scroll */}
-              <div className="p-6 sm:p-8 overflow-y-auto no-scrollbar flex-1 flex flex-col justify-between">
+              <div className="p-5 sm:p-8 overflow-y-auto no-scrollbar flex-1 flex flex-col justify-between">
                 <div>
                   {/* Header */}
-                  <div className="text-center mb-6">
-                    <h4 className="text-2xl sm:text-3xl font-black tracking-tight leading-none uppercase font-display text-black">
+                  <div className="text-center mb-4 sm:mb-6">
+                    <h4 className="text-[20px] sm:text-3xl font-black tracking-tight leading-tight uppercase font-display text-black">
                       LEVE O PLANO COMPLETO POR APENAS <span className="text-[#1DB954]">R$ 29,90</span>
                     </h4>
-                    <p className="text-xs sm:text-sm text-neutral-600 mt-2 font-medium leading-relaxed">
+                    <p className="text-xs sm:text-sm text-neutral-600 mt-1.5 font-medium leading-relaxed">
                       Adquira o catálogo completo com desconto especial de R$ 10,00 reais.
                     </p>
                   </div>
 
                   {/* Pricing Comparison */}
-                  <div className="text-center mb-6 py-2.5 bg-neutral-50 rounded-2xl border border-neutral-100/60">
+                  <div className="text-center mb-4 sm:mb-6 py-2.5 bg-neutral-50 rounded-2xl border border-neutral-100/60">
                     <span className="text-sm font-semibold text-[#7d0000] line-through mr-2.5">De R$ 39,90</span>
                     <span className="text-[16px] font-black text-[#1DB954] font-mono">Por R$ 29,90 à vista</span>
                   </div>
 
-                  {/* Bullet Points */}
-                  <div className="mb-6">
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 mb-3">
+                  {/* Bullet Points with a scroll height threshold for smaller viewports */}
+                  <div className="mb-4 sm:mb-6">
+                    <p className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 mb-2.5">
                       Tudo isso incluso no seu acesso:
                     </p>
-                    <div className="space-y-2.5">
+                    <div className="space-y-2 max-h-[140px] sm:max-h-none overflow-y-auto pr-1 no-scrollbar border-t border-b border-neutral-100/40 py-2 sm:py-0 sm:border-none">
                       {completoPlan?.items.map((item, idx) => (
-                        <div key={idx} className="flex gap-2.5 items-start">
+                        <div key={idx} className="flex gap-2 items-start">
                           <Check className="w-3.5 h-3.5 shrink-0 mt-0.5 text-[#1DB954]" />
-                          <span className="text-[11px] font-semibold text-neutral-800 leading-normal font-sans">
+                          <span className="text-[11px] font-semibold text-neutral-800 leading-tight font-sans">
                             {item}
                           </span>
                         </div>
@@ -237,12 +228,11 @@ export default function Precos() {
                 </div>
 
                 {/* Ações */}
-                <div className="mt-4 space-y-4">
+                <div className="mt-2 sm:mt-4 space-y-3">
                   <button
                     onClick={handleAcceptUpgrade}
-                    className="w-full font-extrabold uppercase tracking-wider py-4 px-6 rounded-xl bg-[#1DB954] hover:bg-[#1ed760] text-black text-xs sm:text-sm border border-transparent shadow-lg active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 font-display animate-pulse hover:animate-none"
+                    className="w-full font-extrabold uppercase tracking-wider py-3.5 px-4 rounded-xl bg-[#1DB954] hover:bg-[#1ed760] text-black text-[14px] border border-transparent shadow-lg active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 font-display animate-pulse hover:animate-none"
                   >
-                    <Sparkles className="w-4 h-4 text-black shrink-0" />
                     SIM, QUERO O PLANO COMPLETO COM DESCONTO
                   </button>
 
