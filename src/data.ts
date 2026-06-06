@@ -218,11 +218,11 @@ export const BONUS_LIST: BonusItem[] = [
   {
     id: "b2",
     code: "BÔNUS 02",
-    title: "Pack de saboneteiras e organizadores de banheiro",
-    description: "Modelos de alta utilidade e design moderno para organizar banheiros e lavabos de forma sofisticada.",
+    title: "GUIA DE MATERIAIS: QUAL FILAMENTO USAR EM ITENS DE COZINHA",
+    description: "Explicação clara sobre quais filamentos usar para diferentes tipos de ITENS, evitando erro comum de material inadequado e garantindo maior durabilidade e qualidade.",
     value: "R$ 67,00",
     badge: "GRÁTIS",
-    image: "https://i.postimg.cc/LsrFX53f/Chat-GPT-Image-29-de-mai-de-2026-16-08-16.webp"
+    image: "https://images.unsplash.com/photo-1615859131861-052f0641a60e?w=500&auto=format&fit=crop&q=80"
   },
   {
     id: "b4",
@@ -263,7 +263,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     items: [
       "Todos os +100 modelos STL de Cozinha",
       "Bônus 01: Guia Anuncio Vendedor (Espione os anúncios campeões)",
-      "Bônus 02: Pack de saboneteiras e organizadores de banheiro",
+      "Bônus 02: Guia de Materiais: Qual Filamento Usar em Itens de Cozinha",
       "Bônus 03: Pack de decoração minimalista (Vasos e suportes)",
       "Atualizações futuras garantidas",
       "Licença comercial livre de venda física",
