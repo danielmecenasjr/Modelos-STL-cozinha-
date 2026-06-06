@@ -222,7 +222,7 @@ export const BONUS_LIST: BonusItem[] = [
     description: "Explicação clara sobre quais filamentos usar para diferentes tipos de ITENS, evitando erro comum de material inadequado e garantindo maior durabilidade e qualidade.",
     value: "R$ 67,00",
     badge: "GRÁTIS",
-    image: "https://images.unsplash.com/photo-1615859131861-052f0641a60e?w=500&auto=format&fit=crop&q=80"
+    image: "https://i.postimg.cc/YCtbMxbL/Chat-GPT-Image-6-de-jun-de-2026-13-05-19.webp"
   },
   {
     id: "b4",
